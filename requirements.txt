@@ -1,5 +1,26 @@
-flask
-pymupdf
-tqdm
-spacy
+torch
 transformers
+sentence-transformers
+faiss-cpu
+# If GPU machine, replace faiss-cpu with:
+# faiss-gpu
+
+accelerate
+tqdm
+numpy
+scipy
+pyyaml
+regex
+
+# PDF reading
+PyMuPDF
+
+# Spacy for sentence splitting
+spacy
+spacy-langdetect
+
+# Optional streaming utility
+bitsandbytes ; platform_system == "Linux"
+
+# For async, threads, etc (built-in but listed for clarity)
+aiohttp
